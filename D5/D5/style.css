@@ -1,0 +1,40 @@
+	body {
+		color: black;
+		background: white;
+	}
+
+	a {
+		color: yellow;
+	}
+
+	#container {
+		display: grid;
+		grid-template-rows: 35px 500px auto 20px;
+		grid-template-areas:
+			"header"
+			"main"
+			"main"
+			"footer"
+	}
+
+	header { 
+		grid-area: header; 
+		background: blue; 
+		color: white; 
+		text-align: center; 
+		display: grid; 
+		grid-template-columns: auto 50px; 
+	}
+
+	
+	main {
+		grid-area: main;
+		background: white;
+	}
+
+	footer {
+		grid-area: footer;
+		background: grey;
+		color: white;
+		padding-left: 10px;
+	}
